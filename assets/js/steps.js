@@ -4,7 +4,7 @@ let steps = [
         numbers: 5,
         candidates: [
             {
-                number: 38111,
+                number: '38111',
                 name: 'Fulano de tal',
                 team: 'ABC',
                 photos: [
@@ -12,11 +12,11 @@ let steps = [
                 ]
             },
             {
-                number: 77222,
+                number: '77222',
                 name: 'Beltrano de tal',
                 team: 'DEFG',
                 photos: [
-                    {url:'77222', legend: 'Vereador'}
+                    {url:'77222.jpg', legend: 'Vereador'}
                 ]
             }
         ]
@@ -26,7 +26,7 @@ let steps = [
         numbers: 2,
         candidates: [
             {
-                number: 99,
+                number: '99',
                 name: 'Ciclano',
                 team: 'ABC',
                 vice: 'Cic',
@@ -36,7 +36,7 @@ let steps = [
                 ]
             },
             {
-                numbers: 84,
+                numbers: '84',
                 name: 'Zulano',
                 team: 'QWERTY',
                 vice: 'Zul',
