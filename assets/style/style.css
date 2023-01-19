@@ -1,3 +1,9 @@
+@keyframes flashes {
+    0% {opacity: 0.2;}
+    50% {opacity: 1;}
+    100% {opacity: 0.2;}
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -63,6 +69,12 @@ body {
     text-align: center;
     line-height: 40px;
     border: 1px solid #000;
+}
+
+.screen-top--left .left-3 .number.flashes {
+    animation-name: flashes;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
 }
 
 .screen-top--left .left-4 {
