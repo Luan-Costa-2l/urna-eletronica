@@ -81,6 +81,20 @@ body {
     line-height: 30px;
 }
 
+.big-warming {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.extra-big-warming {
+    flex: 1;
+    font-weight: bold;
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .screen-top--right {
     width: 90px;
     display: flex;
