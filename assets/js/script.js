@@ -33,4 +33,40 @@ function firstStep() {
     numbers.innerHTML = numberHtml;
 }
 
+function refreshScreen() {
+    let step = steps[currentStep];
+    let candidate = step.candidates.filter((item) => (item.number === numberToVote) ? true : false);
+    // let candidates = step.candidates.filter((item) => {
+    //     if (item.number === numberToVote) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // });
+    if (candidate.length > 0) {
+        candidate = candidate[0];
+        yourVoteFor.style.display = 'block';
+        role.innerHTML = step.title;
+        description.innerHTML = `Nome: ${candidate.name}<br /> Partido: ${candidate.team}`;
+        warming.style.display = 'block';
+
+        let photosHtml = '';
+        for (let i in candidate.photos) {
+            if (candidate.photos[i].small) {
+                photosHtml += `<div class="right-1-image small"><img src="assets/images/${candidate.photos[i].url}"/>${candidate.photos[i].legend}</div>`;
+            } else {
+                photosHtml += `<div class="right-1-image"><img src="assets/images/${candidate.photos[i].url}"/>${candidate.photos[i].legend}</div>`
+            }
+        }
+
+        aside.innerHTML = photosHtml;
+    } else {
+        // role.innerHTML = step.title;
+        yourVoteFor.style.display = 'block';
+        warming.style.display = 'block';
+        document.querySelectorAll('.left-3 .number').forEach(item => item.style.marginTop = '0');
+        description.innerHTML = `<div class="big-warming flashes">VOTO NULO</div>`;
+    }
+}
+
 firstStep();
