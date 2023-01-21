@@ -69,4 +69,20 @@ function refreshScreen() {
     }
 }
 
+function clicked(n) {
+    let elNumber = document.querySelector('.number.flashes');
+    if (elNumber !== null) {
+        elNumber.innerHTML = n;
+        numberToVote = `${numberToVote}${n}`;
+
+        elNumber.classList.remove('flashes');
+        elNumber.style.marginTop = '10px';
+        if(elNumber.nextElementSibling !== null) {
+            elNumber.nextElementSibling.classList.add('flashes');
+        } else {
+            refreshScreen();
+        }
+    }
+}
+
 firstStep();
