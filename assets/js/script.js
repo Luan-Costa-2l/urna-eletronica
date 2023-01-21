@@ -85,4 +85,10 @@ function clicked(n) {
     }
 }
 
+document.querySelectorAll('.button').forEach((item, index) => {
+    item.addEventListener('click', (e) => {
+        clicked(e.target.innerHTML);
+    })
+});
+
 firstStep();
