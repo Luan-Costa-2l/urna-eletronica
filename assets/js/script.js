@@ -85,10 +85,17 @@ function clicked(n) {
     }
 }
 
-document.querySelectorAll('.button').forEach((item, index) => {
-    item.addEventListener('click', (e) => {
-        clicked(e.target.innerHTML);
-    })
-});
+function white() {
+    whiteVote = true;
+    yourVoteFor.style.display = 'block';
+    warming.style.display = 'block';
+    aside.style.display = 'none';
+    numbers.innerHTML = '';
+    description.innerHTML = `<div class="big-warming flashes">VOTO EM BRANCO</div>`;
+}
+
+
+document.querySelector('.white-button').addEventListener('click', white);
+
 
 firstStep();
