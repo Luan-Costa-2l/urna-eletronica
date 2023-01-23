@@ -98,8 +98,38 @@ function corrige() {
     firstStep();
 }
 
+function confirm() {
+    let voteConfirmed = false;
+    let step = steps[currentStep];
+    if (whiteVote) {
+        voteConfirmed = true;
+        votes.push({
+            title: steps[currentStep].title,
+            vote: 'BRANCO'
+        });
+    } else if (numberToVote.length === step.numbers) {
+        voteConfirmed = true;
+        votes.push({
+            title: steps[currentStep].title,
+            vote: numberToVote
+        });
+    }
+
+    if (voteConfirmed) {
+        currentStep++;
+        if (steps[currentStep] !== undefined) {
+            firstStep();
+        } else {
+            document.querySelector('.screen').innerHTML = `<div class="extra-big-warming flashes">FIM</div>`;
+            console.log(votes);
+        }
+    }
+}
+
+
 
 document.querySelector('.white-button').addEventListener('click', white);
 document.querySelector('.corrige-button').addEventListener('click', corrige);
+document.querySelector('.confirm-button').addEventListener('click', confirm);
 
 firstStep();
