@@ -94,8 +94,12 @@ function white() {
     description.innerHTML = `<div class="big-warming flashes">VOTO EM BRANCO</div>`;
 }
 
+function corrige() {
+    firstStep();
+}
+
 
 document.querySelector('.white-button').addEventListener('click', white);
-
+document.querySelector('.corrige-button').addEventListener('click', corrige);
 
 firstStep();
