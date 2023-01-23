@@ -71,7 +71,7 @@ body {
     border: 1px solid #000;
 }
 
-.screen-top--left .left-3 .number.flashes {
+.flashes {
     animation-name: flashes;
     animation-duration: 1.2s;
     animation-iteration-count: infinite;
@@ -96,7 +96,7 @@ body {
 }
 
 .screen-top--right {
-    width: 90px;
+    max-width: 90px;
     display: flex;
     text-align: center;
     flex-direction: column;
