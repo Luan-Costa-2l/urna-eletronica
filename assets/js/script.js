@@ -16,7 +16,7 @@ function firstStep() {
 
     let numberHtml = '';
     numberToVote = '';
-
+    whiteVote = false;
     for (let i = 0; i < step.numbers; i++) {
         if (i === 0) {
             numberHtml += `<div class="number flashes"></div>`; 
