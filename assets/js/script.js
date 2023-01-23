@@ -126,7 +126,11 @@ function confirm() {
     }
 }
 
-
+document.querySelectorAll('.button').forEach((item, index) => {
+    item.addEventListener('click', (e) => {
+        clicked(e.target.innerHTML);
+    })
+});
 
 document.querySelector('.white-button').addEventListener('click', white);
 document.querySelector('.corrige-button').addEventListener('click', corrige);
