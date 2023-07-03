@@ -1,6 +1,37 @@
-# Urna eletronica
+<h1 style="text-align: center;">urna-eletronica</h1>
+<p>secret🤫!</p>
 
-LINK:
-## https://luan-costa-2l.github.io/urna-eletronica/
+## Indice
+- [preview](#😁-preview)
+- [about](#📃-about)
+- [tools](#🔨-tools)
+- [how to contribute](#♻️-how-to-contribute)
 
-Durante a produção desse projeto tive a oportunidade de relembrar conceitos básicos de criação de layouts com html e css, além de ter a oportunidade de trabalhar com a manipulação do DOM com javascript. Além da manipulação do DOM, trabalhei um pouco com manipulação de dados básica enquando organizava e acessava os dados dos candidatos.
+## 😁 Preview
+<img src="assets/preview/preview.png" />
+
+### [see deploy](https://luan-costa-2l.github.io/urna-eletronica/)
+## 📃 About
+
+**urna-eletronica** is one of my first projects.
+
+## 🔨 Tools
+- [javascript](https://legacy.reactjs.org/)
+- [CSS](https://www.typescriptlang.org/)
+- [HTML](https://firebase.google.com/?hl=pt-br) (firestore, fireauth)
+
+## ♻️ How to contribute
+
+```bash
+    # Clone the project
+    $ git clone https://github.com/Luan-Costa-2l/urna-eletronica
+```
+
+```bash
+    # Open the directory
+    $ cd urna-eletronica
+```
+
+```bash
+    # OPEN IN YOUR BROWSER
+```
